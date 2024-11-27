@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, RandomizedLight, Stage } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
@@ -14,10 +14,11 @@ function World(){
     return (
       <div className='h-screen w-screen'>
           <Canvas>
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[10, 10, 5]} intensity={1} />
-            <Model />
+            <Stage adjustCamera intensity={0.1} shadows="contact" environment="city">
+                <Model />
+            </Stage>
             <OrbitControls />
+            <color attach="background" args={['#FDFBD4']} />
         </Canvas>
       </div>
     );
