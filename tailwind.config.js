@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'Bebas': ['Bebas Neue ', 'sans-serif'],
+        'Epilogue': ['Epilogue', 'sans-serif'],
       },
     },
   },
