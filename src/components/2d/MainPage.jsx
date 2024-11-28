@@ -4,7 +4,8 @@ import { useEffect } from "react";
 function MainPage() {
     const [scope, animate] = useAnimate();
     const sequence = [
-        ['.title-animate', { y: ["100%", "0%"] }, { duration: 0.75, delay: 5 }], 
+        [".nav-animate", {opacity: [0, 1]}, {duration: 0.5, delay:1}],
+        ['.title-animate', { y: ["100%", "0%"] }, { duration: 0.75, delay: 4}], 
         ['.info-animate', { x: ["100%", "0%"] }, { duration: 0.75}]
     ];
 
@@ -13,7 +14,7 @@ function MainPage() {
     },[])
   return (
     <main ref={scope} className=' text-black z-40 relative top-0 h-screen w-screen flex flex-col justify-between items-center font-Bebas py-5 overflow-hidden pointer-events-none'>
-        <nav className="flex justify-evenly w-screen">
+        <nav className="flex justify-evenly w-screen nav-animate">
             <div>BAHDMANBABZO</div>
             <div>
                 <img src="/logo_header.svg" alt="lamboghini_logo" />
