@@ -17,7 +17,7 @@ function AnimateCamera() {
   
 function World(){
     return (
-      <div className='h-screen w-screen'>
+      <div className='h-screen w-screen fixed top-0'>
           <Canvas
             camera={{ position: [1, 1, -3], fov: 30 }}
           >
