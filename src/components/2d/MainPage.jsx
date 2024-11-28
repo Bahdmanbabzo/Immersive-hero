@@ -17,7 +17,7 @@ function MainPage() {
         </nav>
         <div className="overflow-hidden flex flex-col items-center">
             <div className="overflow-hidden font-light text-lg">
-                <p>Concept Car</p>
+                <p>Concept Car </p>
             </div>
             <p className="text-5xl font-semibold">LAMBORGHINI TERZO MILLENNIO</p>
         </div>
