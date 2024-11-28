@@ -12,7 +12,7 @@ function MainPage() {
         animate(sequence);
     },[])
   return (
-    <main ref={scope} className=' text-black z-40 relative top-0 h-screen w-screen flex flex-col justify-between items-center font-Bebas py-5 overflow-hidden'>
+    <main ref={scope} className=' text-black z-40 relative top-0 h-screen w-screen flex flex-col justify-between items-center font-Bebas py-5 overflow-hidden pointer-events-none'>
         <nav className="flex justify-evenly w-screen">
             <div>BAHDMANBABZO</div>
             <div>
