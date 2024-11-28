@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function MainPage() {
     const [scope, animate] = useAnimate();
     useEffect(() => {
-        animate('p', { y: ["100%", "0%"] }, { duration: 1, delay: 0 });
+        animate('p', { y: ["100%", "0%"] }, { duration: 1, delay: 5 });
     },[])
   return (
     <main ref={scope} className=' text-black z-40 relative top-0 h-screen w-screen grid place-items-center'>
