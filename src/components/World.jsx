@@ -22,9 +22,11 @@ return null;
 function World(){
     return (
       <div className='h-screen w-screen'>
-          <Canvas>
+          <Canvas
+            camera={{ position: [0, 2, -1.5], fov: 40 }}
+          >
             <CameraLogger />
-            <Stage intensity={0.1} shadows="contact" environment="city">
+            <Stage adjustCamera={false} intensity={0.1} shadows="contact" environment="city">
                 <Model />
             </Stage>
             <OrbitControls />
